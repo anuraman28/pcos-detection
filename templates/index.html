@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1>YOU ARE WELCOME</h1>
+    <H1></H1>
+    <H1></H1><H4>Enter the form data</H4>
+    <form action="{% url 'result' %} ">
+        {% csrf_token %}
+
+
+    Follicle NO.(R): <input type="text" required name=Follicle1>
+    Follicle No.(L): <input type="text" required name=Follicle2>
+    <label for="Skin darkening(Y/N)">Skin darkening(Y/N)</label>
+    <select name="Skin darkening(Y/N)">
+        <option value="yes">yes</option>
+        <option value="no">no </option>
+
+    </select>
+
+    <label for="Hair growth(Y/N)">Hair growth(Y/N)</label>
+    <select name="Hair growth(Y/N)">
+        <option value="yes">yes</option>
+        <option value="no">no </option>
+
+    </select>
+    <label for="Weight gain(Y/N)">Weight gain(Y/N)</label>
+    <select name="Weight gain(Y/N)">
+        <option value="yes">yes</option>
+        <option value="no">no </option>
+
+    </select>
+    <label for="Cycle(R/I)">Cycle(R/I)</label>
+    <select name="Cycle(R/I)">
+        <option value="regular">regular</option>
+        <option value="irregular">irregular</option>
+
+    </select>
+
+   <h6> <input type="submit" name="",value="submit"></h6>
+</form>
+</body>
+</html>
